@@ -1,0 +1,263 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6f8;
+            color: #252525;
+        }
+
+        header {
+            background: #fff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 12px #00000015;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #f70606;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #173b6c;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d51d35;
+        }
+
+        .banner {
+            min-height: 540px;
+            background:
+                linear-gradient(90deg, #102f59e8, #102f5940),
+                url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1600")
+                center/cover;
+            display: flex;
+            align-items: center;
+            padding: 70px 10%;
+            color: white;
+        }
+
+        .banner-conteudo {
+            max-width: 600px;
+        }
+
+        .banner h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #d51d35;
+            color: white;
+            padding: 15px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background: #a90f25;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 75px 9%;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #173b6c;
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            margin-bottom: 45px;
+            line-height: 1.6;
+        }
+
+        .sobre {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            flex-wrap: wrap;
+            background: white;
+        }
+
+        .sobre img {
+            width: 45%;
+            min-width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+            flex: 1;
+        }
+
+        .sobre-texto {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .sobre-texto h2 {
+            color: #291d6c;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .sobre-texto p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .produtos {
+            background: #eef2f7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 28px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 5px 20px #00000010;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #173b6c;
+            margin: 20px 10px 10px;
+        }
+
+        .card p {
+            color: #666;
+            padding: 0 20px 25px;
+            line-height: 1.6;
+        }
+
+        .diferenciais {
+            background: #173b6c;
+            color: white;
+            text-align: center;
+        }
+
+        .diferenciais .titulo {
+            color: white;
+        }
+
+        .diferenciais .subtitulo {
+            color: #dce7f4;
+        }
+
+        .beneficios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .beneficio {
+            background: #ffffff15;
+            padding: 30px 20px;
+            border-radius: 15px;
+        }
+
+        .beneficio span {
+            font-size: 40px;
+        }
+
+        .beneficio h3 {
+            margin: 15px 0;
+        }
+
+        .beneficio p {
+            line-height: 1.6;
+            color: #e2eaf5;
+        }
+
+        .contato {
+            text-align: center;
+            background: white;
+        }
+
+        .contato p {
+            margin: 15px 0 25px;
+            color: #555;
+        }
+
+        footer {
+            background: #102b4d;
+            text-align: center;
+            padding: 30px;
+            color: white;
+        }
+
+        @media(max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .banner h1 {
+                font-size: 36px;
+            }
+
+            .sobre img {
+                width: 100%;
+            }
+        }
+    
